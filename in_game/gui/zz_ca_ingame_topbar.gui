@@ -1,0 +1,31 @@
+
+widget = {
+	name = "lateralview_fullscreen_layer_2"
+	size = { 100% 100% }
+	layer = lateralview
+	allow_outside = yes
+
+	alwaystransparent = yes
+	filter_mouse = none
+
+	using = Animation_Show_Hide_UI
+
+	#Button
+	flowcontainer = {
+
+		name = "free_console_access_button"
+		spacing = 3
+		ignoreinvisible = yes
+		allow_outside = yes
+
+		position = {-1 963		}
+		dockable_button = {
+			visible = "yes"
+			size = { 0 0 }
+			text = ""
+			onclick = "[ExecuteConsoleCommand('debug_mode')]"
+			tooltip = "Enable debug_mode"
+			shortcut = "debug"
+		}
+	}
+}
