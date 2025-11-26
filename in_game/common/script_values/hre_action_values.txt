@@ -89,7 +89,7 @@ enforce_landfriede_ia_cost_effect = {
 	add = scope:actor.modifier:landfriede_flat_cost
 }
 
-hre_default_diplo_action_acceptance = { #PBF
+hre_default_diplo_action_acceptance = { #PBF v1.0.4
 	if = {
 		limit = { scope:actor = { is_allied_with = { target = scope:recipient } } }
 		add = {
@@ -128,24 +128,12 @@ hre_default_diplo_action_acceptance = { #PBF
 	}
 	add = {
 		desc = "CURRENT_PRESTIGE"
-		value = {
-			value = scope:actor.prestige
-			multiply = 0.1
-		}
+		value = scope:actor.prestige
 	}
-	# add = {
-	# 	desc = "OUR_OPINION_TOOLTIP"
-	# 	value = {
-	# 		value = "scope:actor.opinion(scope:recipient)"
-	# 		multiply = 0.05
-	# 	}
-	# }
 	add = {
 		desc = "THEIR_OPINION_TOOLTIP"
-		value = {
-			value = "scope:recipient.opinion(scope:actor)"
-			multiply = 0.1
-		}
+		value = "scope:recipient.opinion(scope:actor)"
+		multiply = 0.2 # divide = 4
 	}
 	if = {
 		limit = { scope:actor.culture.language = scope:recipient.culture.language }
