@@ -1,8 +1,8 @@
 ﻿{
 	"name": "Paradox Bug Fix",
 	"id": "dragon-archer.pbf",
-	"version": "1.0.2511",
-	"supported_game_version": "1.0.*",
+	"version": "1.0.2512",
+	"supported_game_version": "1.0.10",
 	"short_description": "Fix latest bugs in the game",
 	"tags": [
 		"Fixes"

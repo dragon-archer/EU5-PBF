@@ -29,7 +29,10 @@
             not = { gives_fleet_basing_rights_to = scope:recipient }
         }
         scope:recipient = {
-            has_ports = yes
+            OR = {
+                has_ports = yes
+                country_type = building
+            }
             OR = {
                 is_subject = no
                 AND = {
@@ -45,7 +48,10 @@
 
 	request_enabled = {
         scope:actor = {
-            has_ports = yes
+            OR = {
+                has_ports = yes
+                country_type = building
+            }
             not = { has_blocked_treaties = scope:recipient }
             has_limited_diplomacy = no
             OR = {
@@ -53,7 +59,7 @@
                 AND = {
                     is_subject = yes
                     exists = overlord #PBF v1.0.3
-                    not = { overlord = scope:actor }
+                    not = { overlord = scope:recipient }
                     subject_type ?= { #PBF v1.0.3
                         gives_fleet_basing_rights = no
                     }

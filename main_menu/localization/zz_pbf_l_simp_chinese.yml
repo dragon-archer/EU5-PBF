@@ -2,10 +2,6 @@
  # new
  BIRTH_LOCATION: "出生地点" # v1.0.8
 
- # alerts
- ALERT_RGO_MISSING_EMPLOYEES_LOCATION: "[SBuildingWithMissingEmployees.GetLocation.GetName]的[SBuildingWithMissingEmployees.GetLocation.GetRawMaterial.GetIcon]缺少[SBuildingWithMissingEmployees.GetMissingEmployees]：" # v1.0.8
- ALERT_BUILDINGS_MISSING_EMPLOYEES_BUILDING: "[SBuildingWithMissingEmployees.GetBuilding.GetLocation.GetName]的[SBuildingWithMissingEmployees.GetBuilding.GetType.GetName]缺少[SBuildingWithMissingEmployees.GetMissingEmployees][SBuildingWithMissingEmployees.GetBuilding.GetType.GetPopType.GetIcon]：" # v1.0.8
-
  # character_interactions
  promote_to_head_of_cabinet_desc_specific: "[SCOPE.sCountry('actor').Custom('GetHeadOfCabinetName')][SCOPE.sCharacter('recipient').GetName]成为[head_of_the_cabinet|e]，直到[SCOPE.sCharacter('recipient').GetHisHer]死亡或被解除[cabinet|e]职位。" # v1.0.0
 
