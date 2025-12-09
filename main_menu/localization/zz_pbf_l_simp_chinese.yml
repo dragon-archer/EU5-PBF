@@ -1,6 +1,7 @@
 ﻿l_simp_chinese:
  # new
  BIRTH_LOCATION: "出生地点" # v1.0.8
+ rtr_ming_zhu_dynasty: "$name_zhu$"
 
  # character_interactions
  promote_to_head_of_cabinet_desc_specific: "[SCOPE.sCountry('actor').Custom('GetHeadOfCabinetName')][SCOPE.sCharacter('recipient').GetName]成为[head_of_the_cabinet|e]，直到[SCOPE.sCharacter('recipient').GetHisHer]死亡或被解除[cabinet|e]职位。" # v1.0.0
@@ -22,6 +23,9 @@
  SUBJECT_TYPE_ANNEXATION_SPEED: "\n$EFFECT_LIST_BULLET$$SUBJECT$可以以每月$VAL|+=2$的速度被[annexed|e]。" # v1.0.8
  SUBJECT_TYPE_SUBJECT_CANNOT_CANCEL: "\n$EFFECT_LIST_BULLET$$SUBJECT$不能自己取消该关系。" # v1.0.8
 
+ # estate
+ no_labor_sunday_desc: "最好遵循[ShowReligiousGroupName('christian')]的训导，并下令让农奴和农民在周日这天休息，是虔诚与仁慈的体现。" # v1.0.10.1
+
  # generic_missions
  mission_humiliate_rival_tip: "@arrow_bonus_tier_3!前往[Link('diplomacy', 'relations_tab = current_relations', '@diplomacy_panel!外交>当前关系')]，点击目标#V [rivals_icon|e]宿敌#!的旗帜。\n\n@arrow_bonus_tier_2!你可以在国家卡或其[diplomacy_icon]#W 外交行动#!内的[hostile_icon]#W 敌对行动#!点击[war_icon]#W 宣战按钮#!。\n\n@arrow_bonus_tier_1!发动[war]前考虑获取一项[casus_belli_with_icon|e]。我们可以在[parliament|e]期间申请，或是针对[rivals|e]制造。\n\n#italic 查看[Link('hints', 'selected_hint = hint_war', '$hint_war$提示')]和[Link('hints', 'selected_hint = hint_call_for_peace', '$hint_call_for_peace$提示')]了解更多。" # v1.0.4
 
@@ -31,18 +35,17 @@
  # interfaces
  DETAIL_LANGUAGE_INFO: "#T [Language.GetNameWithNoTooltip]语言力量#!" # v1.0.0
  WORKS_OF_ART_MAPMODE_TT: "[ROOT.GetLocation.GetName]拥有[ROOT.GetLocation.GetNumWorksOfArt|Y]件[works_of_art|e]。\n\n[ROOT.GetLocation.GetOwner.GetArtTooltip]" # v1.0.0
-#  NMACI_OPEN_SEA: "远海: ×$VAL|V2%$" # v1.0.4
-#  NMACI_SEA: "海洋: ×$VAL|G2%$" # v1.0.4
  TOOLTIP_POPULATION_CHANGE_BREAKDOWN: "月度人口变化明细" # v1.0.8
-
-#  ARMY_LEVY_ENTRY_DETAIL: ""$STRENGTH$";"[POP.GetCulture.GetName]";"[POP.GetType.GetIcon] [POP.GetType.GetName]";"[POP.GetLocation.GetName]""
-#  NAVY_LEVY_ENTRY_DETAIL: ""$STRENGTH$";"[SUBUNITDEFINITION.GetCategory.GetIcon] [SUBUNITDEFINITION.GetName]";"[POP.GetCulture.GetName]";"[POP.GetType.GetName]""
+ RAW_MATERIAL_LOCATION_TABLE_MAX_LEVEL_POP_DISPLAY: "\n[pop|e]除数系数: [GetDefine('NPop','DISPLAY_SIZE')|Y]" # v1.0.10.1
 
  # international_organizations
  IO_LEADER_CHANGE_METHOD_TT: "#T $TITLE$ #!\n$DESC$" # v1.0.0
 #  union_mechanic_tooltip: "成员国不再拥有相同的[ruler|e]时就会脱离[union|e]。为了使共主邦联实现合邦，每个[member|e]必须与[ShowSpecialStatusName('senior_partner')]达到相同的[union_integration_level_short|e]。对于级别较低的成员，必须通过[parliament|e]强制实施整合。\n\n当前的共主邦联王冠坐落在[InternationalOrganizationsView.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetCourtCountry.GetName]的[InternationalOrganizationsView.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetCourtCountry.GetCapital.GetName]。" # v1.0.0
  LEADERSHIP_VOTE_FOR_SELF_OTHER_VOTERS: "受到他国的投票" # v1.0.0
  TATAR_YOKE_TAX_COLLECTOR_DESC: "[ShowSpecialStatusName('tatar_tax_collector')]的职责是代表[ShowSpecialStatusName('tatar_overlord')]征收贡金。\n\n作为回报，[ShowSpecialStatusNameWithNoTooltip('tatar_tax_collector')]的领土可从臣服于鞑靼枷锁下的其他成员处获得大量#Y 移民#!，这些成员寻求免受[ShowCultureGroupName('mongolian_group')|l]劫掠的保护。" # v1.0.0
+
+ # laws_and_policies
+ order_of_the_dragon_policy_desc: "#italic 龙骑士团#!致力于从[GetCountry('TUR').GetLongName]、异端和异教徒手中捍卫[GetCountry('HUN').GetAdjective]王国、[ShowReligionName('catholic')]会和[ShowReligionName('christian')]世界。它的成立以圣乔治骑士团为基础，受到十字军精神的启发，以巨龙和红十字为纹章，致力于将[ShowEstateTypeName('nobles_estate')]和[ShowEstateTypeName('crown_estate')]们团结起来，共同抵御国内外的威胁，同时为$nobles_estate$提供王室庇护与荣誉称号以回报他们的效忠。" # v1.0.10.1
 
  # messages
  DECLINE_SCRIPT_DIPLOMACY_OTHER_LOG: "$ACTOR$$ACTION_NAME$被$RECIPIENT$拒绝。" # v1.0.8
