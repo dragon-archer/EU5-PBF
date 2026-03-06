@@ -142,11 +142,25 @@ hre_default_diplo_action_acceptance = { #PBF v1.0.4
 			value = 5 # 25
 		}
 	}
+}
+
+
+hre_add_recipient_trust = {
 	add = {
 		desc = "game_concept_trust"
 		scope:actor = {
 			value = "trust(scope:recipient)"
 			multiply = 0.5 # divide = 5
+		}
+	}
+}
+
+hre_add_actor_trust = {
+	add = {
+		desc = "game_concept_trust"
+		scope:recipient = {
+			value = "trust(scope:actor)"
+			divide = 5
 		}
 	}
 }

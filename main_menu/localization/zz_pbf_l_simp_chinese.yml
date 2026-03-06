@@ -1,33 +1,10 @@
 ﻿l_simp_chinese:
  # new
  BIRTH_LOCATION: "出生地点" # v1.0.8
- rtr_ming_zhu_dynasty: "$name_zhu$"
-
- # character_interactions
- promote_to_head_of_cabinet_desc_specific: "[SCOPE.sCountry('actor').Custom('GetHeadOfCabinetName')][SCOPE.sCharacter('recipient').GetName]成为[head_of_the_cabinet|e]，直到[SCOPE.sCharacter('recipient').GetHisHer]死亡或被解除[cabinet|e]职位。" # v1.0.0
-
- # character_names # v1.0.8
- CHARACTER_SHORT_NAME_ORDER_DEFAULT: "$PREFIX$ $NAME$$NUMBER$$SUFFIX$"
- CHARACTER_SHORT_NAME_PREFIX_NAME_SUFFIX_NUMBER: "$PREFIX$ $NAME$$SUFFIX$$NUMBER$"
- CHARACTER_SHORT_NAME_PREFIX_NUMBER_NAME_SUFFIX: "$PREFIX$ $NUMBER$$NAME$$SUFFIX$"
- CHARACTER_NAME_ORDER_DEFAULT: "$PREFIX$ $NAME$$NUMBER$ $LASTNAME$$SUFFIX$ $NICKNAME$"
- CHARACTER_NAME_ORDER_SORT_BY: "$NAME$ $LASTNAME$"
- CHARACTER_NAME_ORDER_PREFIX_LASTNAME_NAME_SUFFIX_NICKNAME_NUMBER: "$PREFIX$$NICKNAME$$SUFFIX$ $LASTNAME$$NAME$$NUMBER$" # 月即别汗 孛儿只斤穆罕默德
- CHARACTER_NAME_ORDER_PREFIX_NUMBER_NICKNAME_LASTNAME_NAME_SUFFIX: "$PREFIX$ $NUMBER$ $NICKNAME$ $LASTNAME$$NAME$ $SUFFIX$"
- CHARACTER_NAME_ORDER_TURKISH: "$PREFIX$ $LASTNAME$ $NICKNAME$ $NUMBER$ $NAME$ $SUFFIX$"
- CHARACTER_NAME_DEFAULT_CONJOINER: "$empty_text$"
 
  # diplomacy
- SCRIPT_DIP_MUTUAL_TRUST_POS: "$EFFECT_LIST_BULLET$该条约生效期间，两国对彼此的[trust|e]提高$VALUE|+0$。" # v1.0.0
- SCRIPT_DIP_MUTUAL_TRUST_NEG: "$EFFECT_LIST_BULLET$该条约生效期间，两国对彼此的[trust|e]降低$VALUE|-0$。" # v1.0.0
  SUBJECT_TYPE_ANNEXATION_SPEED: "\n$EFFECT_LIST_BULLET$$SUBJECT$可以以每月$VAL|+=2$的速度被[annexed|e]。" # v1.0.8
  SUBJECT_TYPE_SUBJECT_CANNOT_CANCEL: "\n$EFFECT_LIST_BULLET$$SUBJECT$不能自己取消该关系。" # v1.0.8
-
- # estate
- no_labor_sunday_desc: "最好遵循[ShowReligiousGroupName('christian')]的训导，并下令让农奴和农民在周日这天休息，是虔诚与仁慈的体现。" # v1.0.10.1
-
- # generic_missions
- mission_humiliate_rival_tip: "@arrow_bonus_tier_3!前往[Link('diplomacy', 'relations_tab = current_relations', '@diplomacy_panel!外交>当前关系')]，点击目标#V [rivals_icon|e]宿敌#!的旗帜。\n\n@arrow_bonus_tier_2!你可以在国家卡或其[diplomacy_icon]#W 外交行动#!内的[hostile_icon]#W 敌对行动#!点击[war_icon]#W 宣战按钮#!。\n\n@arrow_bonus_tier_1!发动[war]前考虑获取一项[casus_belli_with_icon|e]。我们可以在[parliament|e]期间申请，或是针对[rivals|e]制造。\n\n#italic 查看[Link('hints', 'selected_hint = hint_war', '$hint_war$提示')]和[Link('hints', 'selected_hint = hint_call_for_peace', '$hint_call_for_peace$提示')]了解更多。" # v1.0.4
 
  # government/republic_factions
  republic_factions.6.a: "他们对[ROOT.GetCountry.GetNameWithNoTooltip]的不忠必须受到惩罚。" # v1.0.0
@@ -35,24 +12,11 @@
  # interfaces
  DETAIL_LANGUAGE_INFO: "#T [Language.GetNameWithNoTooltip]语言力量#!" # v1.0.0
  WORKS_OF_ART_MAPMODE_TT: "[ROOT.GetLocation.GetName]拥有[ROOT.GetLocation.GetNumWorksOfArt|Y]件[works_of_art|e]。\n\n[ROOT.GetLocation.GetOwner.GetArtTooltip]" # v1.0.0
- TOOLTIP_POPULATION_CHANGE_BREAKDOWN: "月度人口变化明细" # v1.0.8
  RAW_MATERIAL_LOCATION_TABLE_MAX_LEVEL_POP_DISPLAY: "\n[pop|e]除数系数: [GetDefine('NPop','DISPLAY_SIZE')|Y]" # v1.0.10.1
 
  # international_organizations
- IO_LEADER_CHANGE_METHOD_TT: "#T $TITLE$ #!\n$DESC$" # v1.0.0
-#  union_mechanic_tooltip: "成员国不再拥有相同的[ruler|e]时就会脱离[union|e]。为了使共主邦联实现合邦，每个[member|e]必须与[ShowSpecialStatusName('senior_partner')]达到相同的[union_integration_level_short|e]。对于级别较低的成员，必须通过[parliament|e]强制实施整合。\n\n当前的共主邦联王冠坐落在[InternationalOrganizationsView.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetCourtCountry.GetName]的[InternationalOrganizationsView.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetCourtCountry.GetCapital.GetName]。" # v1.0.0
- LEADERSHIP_VOTE_FOR_SELF_OTHER_VOTERS: "受到他国的投票" # v1.0.0
  TATAR_YOKE_TAX_COLLECTOR_DESC: "[ShowSpecialStatusName('tatar_tax_collector')]的职责是代表[ShowSpecialStatusName('tatar_overlord')]征收贡金。\n\n作为回报，[ShowSpecialStatusNameWithNoTooltip('tatar_tax_collector')]的领土可从臣服于鞑靼枷锁下的其他成员处获得大量#Y 移民#!，这些成员寻求免受[ShowCultureGroupName('mongolian_group')|l]劫掠的保护。" # v1.0.0
-
- # laws_and_policies
- order_of_the_dragon_policy_desc: "#italic 龙骑士团#!致力于从[GetCountry('TUR').GetLongName]、异端和异教徒手中捍卫[GetCountry('HUN').GetAdjective]王国、[ShowReligionName('catholic')]会和[ShowReligionName('christian')]世界。它的成立以圣乔治骑士团为基础，受到十字军精神的启发，以巨龙和红十字为纹章，致力于将[ShowEstateTypeName('nobles_estate')]和[ShowEstateTypeName('crown_estate')]们团结起来，共同抵御国内外的威胁，同时为$nobles_estate$提供王室庇护与荣誉称号以回报他们的效忠。" # v1.0.10.1
 
  # messages
  DECLINE_SCRIPT_DIPLOMACY_OTHER_LOG: "$ACTOR$$ACTION_NAME$被$RECIPIENT$拒绝。" # v1.0.8
  DECLINE_SCRIPT_DIPLOMACY_REQUEST_OTHER_LOG: "$ACTOR$$ACTION_NAME$的请求被$RECIPIENT$拒绝。" # v1.0.8
-
- # subject_interactions
- state_bank_desc: "这类[subject|e]代表了该国作为一个企业实体同其[overlord|e]的紧密联系，且仅限采取了[ShowGovernmentReformName('banking_country')][government_reform|e]的国家。属国将获得更高的[ShowModifierTypeName('diplomatic_reputation')]；而宗主国获得更低的[ShowModifierTypeName('bank_interest')]，并且可以通过[ShowCountryInteractionName('siphon_income')][country_interaction|e]来从$state_bank$属国国库中抽取一般资金（而非常规数额）。" # v1.0.0
-
- # triggers
- country_highest_rated_special_status_power_greater_than: "在[INTERNATIONAL_ORGANIZATION.GetName]中至少拥有$NUM|Y2$点[special_status_power|e]，该数值基于其最高等级的[special_status|e]$current_value_Y2$" # v1.0.0
