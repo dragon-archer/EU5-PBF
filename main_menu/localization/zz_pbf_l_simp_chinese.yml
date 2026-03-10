@@ -5,6 +5,7 @@
  # diplomacy
  SUBJECT_TYPE_ANNEXATION_SPEED: "\n$EFFECT_LIST_BULLET$$SUBJECT$可以以每月$VAL|+=2$的速度被[annexed|e]。" # v1.0.8
  SUBJECT_TYPE_SUBJECT_CANNOT_CANCEL: "\n$EFFECT_LIST_BULLET$$SUBJECT$不能自己取消该关系。" # v1.0.8
+ GREATPOWER_BENEFITS: "成为第##[Country.GetGreatPowerRank]列强拥有以下增益：" # v1.1.9
 
  # government/republic_factions
  republic_factions.6.a: "他们对[ROOT.GetCountry.GetNameWithNoTooltip]的不忠必须受到惩罚。" # v1.0.0
@@ -13,6 +14,9 @@
  DETAIL_LANGUAGE_INFO: "#T [Language.GetNameWithNoTooltip]语言力量#!" # v1.0.0
  WORKS_OF_ART_MAPMODE_TT: "[ROOT.GetLocation.GetName]拥有[ROOT.GetLocation.GetNumWorksOfArt|Y]件[works_of_art|e]。\n\n[ROOT.GetLocation.GetOwner.GetArtTooltip]" # v1.0.0
  RAW_MATERIAL_LOCATION_TABLE_MAX_LEVEL_POP_DISPLAY: "\n[pop|e]除数系数: [GetDefine('NPop','DISPLAY_SIZE')|Y]" # v1.0.10.1
+ PROXIMITY_ICON_LAND:	"@inland!" # v1.1.9
+ LEGEND_KEY_INTEGRATED: "[Concept('integrated', '已整合')|e]" # v1.1.9
+ GOVERNMENT_INVESTMENT_MAXED_OUT: "投入上限为$VAL|2$[gold_i]，因为无法再提高[$POWER_LINK$|e]。" # v1.1.9
 
  # international_organizations
  TATAR_YOKE_TAX_COLLECTOR_DESC: "[ShowSpecialStatusName('tatar_tax_collector')]的职责是代表[ShowSpecialStatusName('tatar_overlord')]征收贡金。\n\n作为回报，[ShowSpecialStatusNameWithNoTooltip('tatar_tax_collector')]的领土可从臣服于鞑靼枷锁下的其他成员处获得大量#Y 移民#!，这些成员寻求免受[ShowCultureGroupName('mongolian_group')|l]劫掠的保护。" # v1.0.0
