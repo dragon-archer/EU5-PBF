@@ -2,10 +2,16 @@
  # new
  BIRTH_LOCATION: "出生地点" # v1.0.8
 
+ # character_names
+ CHARACTER_SHORT_NAME_ORDER_DEFAULT: "$PREFIX$ $NAME$$NUMBER$ $SUFFIX$" # v1.1.9
+
  # diplomacy
  SUBJECT_TYPE_ANNEXATION_SPEED: "\n$EFFECT_LIST_BULLET$$SUBJECT$可以以每月$VAL|+=2$的速度被[annexed|e]。" # v1.0.8
  SUBJECT_TYPE_SUBJECT_CANNOT_CANCEL: "\n$EFFECT_LIST_BULLET$$SUBJECT$不能自己取消该关系。" # v1.0.8
  GREATPOWER_BENEFITS: "成为第##[Country.GetGreatPowerRank]列强拥有以下增益：" # v1.1.9
+
+ # government
+ kazenny_action_progress_tooltip_1: "提升$MODIFIER_TYPE_NAME_global_distance_from_capital_speed_propagation$\n[SCOPE.sCountry('actor').GetDescriptionFor('global_distance_from_capital_speed_propagation')]" # v1.1.9
 
  # government/republic_factions
  republic_factions.6.a: "他们对[ROOT.GetCountry.GetNameWithNoTooltip]的不忠必须受到惩罚。" # v1.0.0
