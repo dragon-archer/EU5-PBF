@@ -2,6 +2,11 @@
  # new
  BIRTH_LOCATION: "出生地点" # v1.0.8
 
+ # advances
+ UNLOCKS_TOWN_RIGHTS_SHORT: "[TOWN_RIGHTS_TYPE.GetName]" # v1.2.5
+ UNLOCKS_TOWN_RIGHTS: "$ICON$解锁：[TOWN_RIGHTS_TYPE.GetName][town_rights|e]" # v1.2.5
+ UNLOCKS_TOWN_RIGHTS_NO_TT: "$ICON$解锁：[TOWN_RIGHTS_TYPE.GetNameWithNoTooltip]" # v1.2.5
+
  # character_names
  CHARACTER_SHORT_NAME_ORDER_DEFAULT: "$PREFIX$ $NAME$$NUMBER$ $SUFFIX$" # v1.1.9
 
@@ -23,6 +28,11 @@
  PROXIMITY_ICON_LAND:	"@inland!" # v1.1.9
  LEGEND_KEY_INTEGRATED: "[Concept('integrated', '已整合')|e]" # v1.1.9
  GOVERNMENT_INVESTMENT_MAXED_OUT: "投入上限为$VAL|2$[gold_i]，因为无法再提高[$POWER_LINK$|e]。" # v1.1.9
+ TWR_NOT_NOT_AMOUNT: "@trigger_no![LOCATION.GetNameWithNoTooltip]已经拥有$NUM|G$/#TOOLTIP:$BREAKDOWN_TAG$ $MAX|G$#!项可能的[town_rights|e]" # v1.2.4
+ GOODS_SUPPLY_ENTRY_IN_MARKET_TT: "[LOCATION.GetRank.GetIcon] [LOCATION.GetNameWithNoTooltip] [Location.GetOwner.GetFlagIcon]: $TAG_TOOLTIP$" # v1.2.4
+ GOODS_COST_FOR_DEMAND_ENTRY: "$VAL|2V$ $GOODS_MARKET_ENTRY_LABEL$ ($PRICE$): $COST|-=2$@gold!\n" # v1.2.5
+ GOODS_SUPPLY_ENTRY_IN_MARKET_START: "[GOODS.GetNameWithNoTooltip]来源" # v1.2.5 #TODO
+ TAX_BASE_TT_ESTATES_LIST_TAXED: "在[Location.GetOwner.GetEconomy.GetTaxRate(Estate.GetType)|W%][tax_rate|e]下，@location![Location.GetNameWithNoTooltip]的[Estate.GetName]向[treasury|e]缴纳[Multiply_CFixedPoint(Location.GetOwner.GetEconomy.GetTaxRate(Estate.GetType), Location.GetEstateTaxBase(Estate.Self))|+=2]@gold!。" # v1.2.5 #TODO
 
  # international_organizations
  TATAR_YOKE_TAX_COLLECTOR_DESC: "[ShowSpecialStatusName('tatar_tax_collector')]的职责是代表[ShowSpecialStatusName('tatar_overlord')]征收贡金。\n\n作为回报，[ShowSpecialStatusNameWithNoTooltip('tatar_tax_collector')]的领土可从臣服于鞑靼枷锁下的其他成员处获得大量#Y 移民#!，这些成员寻求免受[ShowCultureGroupName('mongolian_group')|l]劫掠的保护。" # v1.0.0
@@ -30,3 +40,6 @@
  # messages
  DECLINE_SCRIPT_DIPLOMACY_OTHER_LOG: "$ACTOR$$ACTION_NAME$被$RECIPIENT$拒绝。" # v1.0.8
  DECLINE_SCRIPT_DIPLOMACY_REQUEST_OTHER_LOG: "$ACTOR$$ACTION_NAME$的请求被$RECIPIENT$拒绝。" # v1.0.8
+
+ # town_rights
+ unlock_bergregal_rights_tt: "解锁[ShowTownRightsName('upper_bergregal')]和[ShowTownRightsName('lower_bergregal')][town_rights]" # v1.2.4
