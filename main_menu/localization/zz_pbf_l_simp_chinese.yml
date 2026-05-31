@@ -37,6 +37,10 @@
  # international_organizations
  TATAR_YOKE_TAX_COLLECTOR_DESC: "[ShowSpecialStatusName('tatar_tax_collector')]的职责是代表[ShowSpecialStatusName('tatar_overlord')]征收贡金。\n\n作为回报，[ShowSpecialStatusNameWithNoTooltip('tatar_tax_collector')]的领土可从臣服于鞑靼枷锁下的其他成员处获得大量#Y 移民#!，这些成员寻求免受[ShowCultureGroupName('mongolian_group')|l]劫掠的保护。" # v1.0.0
 
+ # location_names
+ genoa.ligurian_dialect: "热那亚" # v1.2.5
+ vienna: "维也纳" # v1.2.5
+
  # messages
  DECLINE_SCRIPT_DIPLOMACY_OTHER_LOG: "$ACTOR$$ACTION_NAME$被$RECIPIENT$拒绝。" # v1.0.8
  DECLINE_SCRIPT_DIPLOMACY_REQUEST_OTHER_LOG: "$ACTOR$$ACTION_NAME$的请求被$RECIPIENT$拒绝。" # v1.0.8
